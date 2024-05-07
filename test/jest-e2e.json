@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@lib/database/(.*)": "<rootDir>/../libs/database/src/$1",
+    "@lib/database": "<rootDir>/../libs/database/src",
+    "@lib/auth/(.*)": "<rootDir>/../libs/auth/src/$1",
+    "@lib/auth": "<rootDir>/../libs/auth/src",
+    "@lib/tefa/(.*)": "<rootDir>/../libs/tefa/src/$1",
+    "@lib/tefa": "<rootDir>/../libs/tefa/src",
+    "@lib/config/(.*)": "<rootDir>/../libs/config/src/$1",
+    "@lib/config": "<rootDir>/../libs/config/src"
+  }
+}

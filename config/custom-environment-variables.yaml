@@ -1,0 +1,20 @@
+port: PORT
+
+swagger:
+  title: SWAGGER_TITLE
+  description: SWAGGER_DESCRIPTION
+  path: SWAGGER_PATH
+
+db:
+  database: DB_DATABASE
+
+jwt:
+  options:
+    issuer: JWT_OPTIONS_ISSUER
+    audience: JWT_OPTIONS_AUDIENCE
+  accessToken:
+    secret: JWT_ACCESS_TOKEN_SECRET
+    expiresIn: JWT_ACCESS_TOKEN_EXPIRES_IN
+  refreshToken:
+    secret: JWT_REFRESH_TOKEN_SECRET
+    expiresIn: JWT_REFRESH_TOKEN_EXPIRES_IN

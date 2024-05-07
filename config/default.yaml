@@ -1,0 +1,23 @@
+port: 3000
+
+swagger:
+  title: NestJs Workshop
+  description: An example nestjs-project for the Diamir EMAIL Workshop
+  path: internal/docs
+
+db:
+  type: sqlite
+  database: workshop.db
+  synchronize: false
+  logging: false
+
+jwt:
+  options:
+    issuer: workshop
+    audience: member:workshop
+  accessToken:
+    secret:
+    expiresIn: 2h
+  refreshToken:
+    secret:
+    expiresIn: 2d
